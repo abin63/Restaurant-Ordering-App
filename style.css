@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 167px;
+    background-image: url("./images/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header-title{
+    width: auto;
+    height: 24px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 10px 50px;
+    color: #FFFFFF;
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 1.2;
+}
+
+.header-description{
+    width: auto;
+    height: 8px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 0 50px;
+    color: #FFFFFF;
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 22.42px;
+    line-height: 13.8px;
+}
+
+.add-btn{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #3C3C3C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.add-btn:active{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+
+.divider{
+    width: 504.0000000000019px;
+    height: 0px;
+    opacity: 1;
+    margin: 0 auto;
+    border: 1px solid #D2D2D2;
+    border-width: 1px;
+}
+
+.icon{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 78.72px;
+    line-height: 98.4px;
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item-name{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.item-description{
+    width: 250px;
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.item-price{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+
+/* Checkout Payment */
+
+.checkout-payment{
+    display: none;
+    width: 508px;
+    opacity: 1;
+    border-radius: 3px;
+    margin: 10px auto;
+    padding: 30px;
+}
+
+.checkout-title{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 16.8px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.checkout-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.checkout-item-name{
+    display: flex;
+    gap: 10px;
+}
+
+.checkout-item-name-title{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.remove-btn{
+    opacity: 1;
+    font-family: Verdana;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    color: #BBBBBB;
+    background-color: #FFFFFF;
+    border: none;
+    text-align: center;
+}
+
+.checkout-item-price{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.divider-thick{
+    width: 450px;
+    height: 0px;
+    opacity: 1;
+    border: 2px solid #393333;
+    border-width: 2px;
+    margin: 10px auto;
+
+}
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #0E0E0E;
+
+}
+
+.total-price-title{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+}
+
+.total-price-value{
+    font-family: Smythe;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+}
+
+/* Order Complete State */
+
+.order-confirm{
+    display: none;
+    color: #065F46;
+    width: 504px;
+    height: 120px;
+    font-family: Smythe;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    background-color: #ECFDF5;
+    border-radius: 3px;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: center;
+}
+
+/* checkout payment model state */
+
+.checkout-payment-modal-state{
+    display: none;
+}
+
+.payment-modal{
+    width: 524px;
+    border-radius: 3.89px;
+    border-width: 1.3px;
+    background-color: #FFFFFF;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+     backdrop-filter: blur(6px);
+    background-color: rgb(0, 0, 0, 0.2);
+    z-index: 4;
+}
+
+.payment-modal > h2{
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.payment-modal > input{
+    width: 475.911376953125px;
+    border-radius: 3.89px;
+    border-width: 1.3px;
+    padding: 20px;
+    border: 1.3px solid #757575;
+    margin-bottom: 20px;
+    font-family: Verdana;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 31.12px;
+    letter-spacing: 0%;
+    box-sizing: border-box;
+    transition: border 0.2s ease;
+    -webkit-transition: border 0.2s ease;
+    -moz-transition: border 0.2s ease;
+    -ms-transition: border 0.2s ease;
+    -o-transition: border 0.2s ease;
+}
+
+.payment-modal > input:hover {
+    border: 1.3px solid #AAAAAA;
+}
+
+.payment-modal > input:focus {
+    outline: none;
+    border: 1.5px solid #0AAD78;
+}
+
+.pay-button{
+    width: 475.911376953125px;
+    background-color: #16DB99;
+    border-radius: 3.89px;
+    padding: 20px;
+    margin-top: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 31.12px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.pay-button:hover {
+    background-color: #0FC488;
+}
+
+.pay-button:active {
+    background-color: #0AAD78;
+    transform: scale(0.98);
+}
+
+.pay-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(22, 219, 153, 0.35);
+}
+

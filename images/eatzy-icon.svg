@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Eatzy App Icon — fork silhouette doubles as the letter E -->
+  <rect width="100" height="100" rx="22" fill="#F7521A"/>
+  <!-- Vertical spine (fork handle / left bar of E) -->
+  <rect x="31" y="16" width="7" height="68" rx="3.5" fill="white"/>
+  <!-- Top tine / top bar of E -->
+  <rect x="38" y="16" width="31" height="7" rx="3.5" fill="white"/>
+  <!-- Middle tine / middle bar of E (shorter) -->
+  <rect x="38" y="46.5" width="22" height="7" rx="3.5" fill="white"/>
+  <!-- Bottom tine / bottom bar of E -->
+  <rect x="38" y="77" width="31" height="7" rx="3.5" fill="white"/>
+</svg>
